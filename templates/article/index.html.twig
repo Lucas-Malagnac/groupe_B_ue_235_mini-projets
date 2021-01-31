@@ -1,6 +1,20 @@
 {% extends 'base.html.twig' %}
 {% block title %}Article index{% endblock %}
 
+
+<!--Menu dynamique-->
+<nav class = "navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class = "collapse navbar-collapse" id = "navbarColor01">
+    <ul class = "navbar-nav mr-auto">
+      <li class = "nav-item">
+        <a class="nav-link" href="{{ path('article_index') }}"> Acceuil </a>
+        <a class="nav-link" href="{{ path('article_new') }}">  Create New  </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
 {% block titre1%}<h1>La voix du Webmaster</h1>{% endblock %}
 {% block lien1%}<button id="login">Log in</button>{% endblock %}
 {% block lien2%}<button id="register">register</button>{% endblock %}
@@ -41,9 +55,6 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <button id="new">Create new</button>
-
 
 
     {{ knp_pagination_render(articles) }}
