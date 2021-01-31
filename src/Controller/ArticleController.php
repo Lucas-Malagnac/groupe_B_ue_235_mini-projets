@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-
+use Knp\Component\Pager\PaginatorInterface;
 use App\Entity\Article;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
@@ -18,10 +18,18 @@ class ArticleController extends AbstractController
     /**
      * @Route("/", name="article_index", methods={"GET"})
      */
-    public function index(ArticleRepository $articleRepository): Response
+    public function index(Request $request, PaginatorInterface $paginator)
     {
+$donnees = $this->getDoctrine()->getRepository(Article::class)->findAll();
+
+        $articles = $paginator->paginate(
+            $donnees, // Requête contenant les données à paginer (ici nos articles)
+            $request->query->getInt('page', 1), // Numéro de la page en cours dans l'URL. 1 si rien
+            3 // Nombre de résultats par page
+        );
+
         return $this->render('article/index.html.twig', [
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articles,
         ]);
     }
 

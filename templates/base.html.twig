@@ -3,10 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}<link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>{% endblock %}
     </head>
     <body>
+        {% block titre1 %}{% endblock %}
+    	{% block lien1 %}{% endblock %}
+    	{% block lien2 %}{% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}<script src="{{ asset('javascripts/script.js') }}"></script>{% endblock %}
     </body>
 </html>

@@ -1,0 +1,66 @@
+body {
+	font-family:'Heebo';
+	background-image: url("../image/journal2.jpg");
+	background-size: contain;
+}
+h1{
+	float: left;
+	color: #264653;
+	font-size: 30px;
+	margin-left: 50px;
+}
+h2{
+	color: #264653;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+#entete{
+	background-color: #E76F51;
+	text-align: center;
+}
+#id{
+	padding-right: 10px;
+	padding-left: 10px
+}
+tr{
+	text-align: center;
+}
+#content{;
+	text-align: left;
+}
+.table{
+	color: #264653;
+	margin-right: 50px;
+	margin-left: 50px;
+
+}
+button{
+	float: right;
+	background-color: #264653;
+	margin-right: 5px;
+	margin-top: 20px;
+	color: #E76F51;
+}
+a{
+	color: #E76F51;
+}
+a:hover {
+	color: #264653;
+}
+tr:nth-child(even) {
+  background-color: #E9C46A;
+}
+tr:nth-child(odd) {
+  background-color: #F4A261;
+}
+hr{
+	height: 10px;
+	border-color: #264653;
+	background-color: #264653;
+	width: 100%
+}
+#new{
+	margin-bottom: 10px;
+}

@@ -93,11 +93,26 @@
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
+    "egulias/email-validator": {
+        "version": "2.1.25"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "knplabs/knp-components": {
+        "version": "v3.0.0"
+    },
+    "knplabs/knp-menu": {
+        "version": "v3.1.2"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v3.1.0"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.4.2"
     },
     "laminas/laminas-code": {
         "version": "4.0.0"
@@ -246,6 +261,18 @@
     "symfony/intl": {
         "version": "v4.4.3"
     },
+    "symfony/mailer": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "15658c2a0176cda2e7dba66276a2030b52bd81b2"
+        },
+        "files": [
+            "config/packages/mailer.yaml"
+        ]
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -284,6 +311,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.22.0"
+    },
+    "symfony/profiler-pack": {
+        "version": "v1.0.5"
     },
     "symfony/property-access": {
         "version": "v4.4.3"
@@ -332,6 +362,19 @@
     "symfony/stopwatch": {
         "version": "v4.4.3"
     },
+    "symfony/translation": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+        },
+        "files": [
+            "config/packages/translation.yaml",
+            "translations/.gitignore"
+        ]
+    },
     "symfony/translation-contracts": {
         "version": "v2.0.1"
     },
@@ -374,8 +417,25 @@
     "symfony/var-exporter": {
         "version": "v4.4.3"
     },
+    "symfony/web-profiler-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
+        },
+        "files": [
+            "config/packages/dev/web_profiler.yaml",
+            "config/packages/test/web_profiler.yaml",
+            "config/routes/dev/web_profiler.yaml"
+        ]
+    },
     "symfony/yaml": {
         "version": "v4.4.3"
+    },
+    "symfonycasts/verify-email-bundle": {
+        "version": "v1.1.1"
     },
     "twig/extra-bundle": {
         "version": "v3.0.1"
